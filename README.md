@@ -9,6 +9,8 @@ Also is the ability is change the request of how many results the user is gettin
 
 The project is by no means complete. Combine is pretty new to me, and i'm constantly learning so my practices will improve over time. I've architectured everything roughly into an MVVM like structure, again not something I'm super used to (I am actually more used to [the Composable Architecture](https://github.com/pointfreeco/swift-composable-architecture#examples). Alas, much can be improved. Test's for starters and a slightly more refined UI would be a good place to start. 
 
+I have also utilised https://github.com/weitieda/bottom-sheet as half sheet's are not yet native to SwiftUI without having to pull in UIKit and make modifications. This is a much more efficient way for now until they're supported later this year! 
+
 ## Screenshots
 | <img width="401" alt="image" src="https://user-images.githubusercontent.com/43879032/185634118-13ca2932-6f15-4c8b-a874-dc3d3d5cf6b2.png"> |  <img width="398" alt="image" src="https://user-images.githubusercontent.com/43879032/185634200-f6afec4d-3936-4d61-adc9-fc048de61668.png">|
 |--|--|
