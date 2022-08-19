@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		5851243D28AE3BD300D2C651 /* animalsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5851243C28AE3BD300D2C651 /* animalsApp.swift */; };
-		5851243F28AE3BD300D2C651 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5851243E28AE3BD300D2C651 /* ContentView.swift */; };
+		5851243F28AE3BD300D2C651 /* AnimalListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5851243E28AE3BD300D2C651 /* AnimalListView.swift */; };
 		5851244128AE3BD500D2C651 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5851244028AE3BD500D2C651 /* Assets.xcassets */; };
 		5851244428AE3BD500D2C651 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5851244328AE3BD500D2C651 /* Preview Assets.xcassets */; };
 		5851244E28AE3BD500D2C651 /* animalsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5851244D28AE3BD500D2C651 /* animalsTests.swift */; };
 		5851245828AE3BD500D2C651 /* animalsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5851245728AE3BD500D2C651 /* animalsUITests.swift */; };
 		5851245A28AE3BD500D2C651 /* animalsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5851245928AE3BD500D2C651 /* animalsUITestsLaunchTests.swift */; };
+		5851246728AE3CAE00D2C651 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5851246628AE3CAE00D2C651 /* LaunchScreen.storyboard */; };
+		5851246928AE50F300D2C651 /* AnimalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5851246828AE50F300D2C651 /* AnimalViewModel.swift */; };
+		5851246B28AE510300D2C651 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5851246A28AE510300D2C651 /* SettingsView.swift */; };
+		5851246D28AE511300D2C651 /* AnimalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5851246C28AE511300D2C651 /* AnimalDetailView.swift */; };
+		5851246F28AE512100D2C651 /* AnimalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5851246E28AE512100D2C651 /* AnimalModel.swift */; };
+		5851247128AE512A00D2C651 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5851247028AE512A00D2C651 /* Enums.swift */; };
+		5851247528AE535900D2C651 /* AnimalRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5851247428AE535900D2C651 /* AnimalRequest.swift */; };
+		5851247B28AED6D100D2C651 /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 5851247A28AED6D100D2C651 /* BottomSheet */; };
+		5851247D28AEF7E100D2C651 /* SharedComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5851247C28AEF7E100D2C651 /* SharedComponents.swift */; };
+		5851247F28AFBB3F00D2C651 /* AnimalDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5851247E28AFBB3F00D2C651 /* AnimalDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +46,7 @@
 /* Begin PBXFileReference section */
 		5851243928AE3BD300D2C651 /* animals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = animals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5851243C28AE3BD300D2C651 /* animalsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animalsApp.swift; sourceTree = "<group>"; };
-		5851243E28AE3BD300D2C651 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5851243E28AE3BD300D2C651 /* AnimalListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListView.swift; sourceTree = "<group>"; };
 		5851244028AE3BD500D2C651 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5851244328AE3BD500D2C651 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5851244928AE3BD500D2C651 /* animalsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = animalsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +54,15 @@
 		5851245328AE3BD500D2C651 /* animalsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = animalsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5851245728AE3BD500D2C651 /* animalsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animalsUITests.swift; sourceTree = "<group>"; };
 		5851245928AE3BD500D2C651 /* animalsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animalsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5851246628AE3CAE00D2C651 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5851246828AE50F300D2C651 /* AnimalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalViewModel.swift; sourceTree = "<group>"; };
+		5851246A28AE510300D2C651 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		5851246C28AE511300D2C651 /* AnimalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailView.swift; sourceTree = "<group>"; };
+		5851246E28AE512100D2C651 /* AnimalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalModel.swift; sourceTree = "<group>"; };
+		5851247028AE512A00D2C651 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		5851247428AE535900D2C651 /* AnimalRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalRequest.swift; sourceTree = "<group>"; };
+		5851247C28AEF7E100D2C651 /* SharedComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedComponents.swift; sourceTree = "<group>"; };
+		5851247E28AFBB3F00D2C651 /* AnimalDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5851247B28AED6D100D2C651 /* BottomSheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +115,16 @@
 			isa = PBXGroup;
 			children = (
 				5851243C28AE3BD300D2C651 /* animalsApp.swift */,
-				5851243E28AE3BD300D2C651 /* ContentView.swift */,
+				5851246828AE50F300D2C651 /* AnimalViewModel.swift */,
+				5851246A28AE510300D2C651 /* SettingsView.swift */,
+				5851246C28AE511300D2C651 /* AnimalDetailView.swift */,
+				5851247E28AFBB3F00D2C651 /* AnimalDetailViewModel.swift */,
+				5851246E28AE512100D2C651 /* AnimalModel.swift */,
+				5851247028AE512A00D2C651 /* Enums.swift */,
+				5851243E28AE3BD300D2C651 /* AnimalListView.swift */,
+				5851247C28AEF7E100D2C651 /* SharedComponents.swift */,
+				5851247428AE535900D2C651 /* AnimalRequest.swift */,
+				5851246628AE3CAE00D2C651 /* LaunchScreen.storyboard */,
 				5851244028AE3BD500D2C651 /* Assets.xcassets */,
 				5851244228AE3BD500D2C651 /* Preview Content */,
 			);
@@ -143,6 +172,9 @@
 			dependencies = (
 			);
 			name = animals;
+			packageProductDependencies = (
+				5851247A28AED6D100D2C651 /* BottomSheet */,
+			);
 			productName = animals;
 			productReference = 5851243928AE3BD300D2C651 /* animals.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +247,9 @@
 				Base,
 			);
 			mainGroup = 5851243028AE3BD300D2C651;
+			packageReferences = (
+				5851247928AED6D100D2C651 /* XCRemoteSwiftPackageReference "bottom-sheet" */,
+			);
 			productRefGroup = 5851243A28AE3BD300D2C651 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5851246728AE3CAE00D2C651 /* LaunchScreen.storyboard in Resources */,
 				5851244428AE3BD500D2C651 /* Preview Assets.xcassets in Resources */,
 				5851244128AE3BD500D2C651 /* Assets.xcassets in Resources */,
 			);
@@ -257,8 +293,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5851243F28AE3BD300D2C651 /* ContentView.swift in Sources */,
+				5851243F28AE3BD300D2C651 /* AnimalListView.swift in Sources */,
+				5851247528AE535900D2C651 /* AnimalRequest.swift in Sources */,
+				5851246F28AE512100D2C651 /* AnimalModel.swift in Sources */,
+				5851247D28AEF7E100D2C651 /* SharedComponents.swift in Sources */,
+				5851246B28AE510300D2C651 /* SettingsView.swift in Sources */,
+				5851247F28AFBB3F00D2C651 /* AnimalDetailViewModel.swift in Sources */,
 				5851243D28AE3BD300D2C651 /* animalsApp.swift in Sources */,
+				5851247128AE512A00D2C651 /* Enums.swift in Sources */,
+				5851246928AE50F300D2C651 /* AnimalViewModel.swift in Sources */,
+				5851246D28AE511300D2C651 /* AnimalDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +467,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -434,7 +480,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -452,6 +498,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -463,7 +511,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -583,6 +631,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5851247928AED6D100D2C651 /* XCRemoteSwiftPackageReference "bottom-sheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/weitieda/bottom-sheet";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5851247A28AED6D100D2C651 /* BottomSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5851247928AED6D100D2C651 /* XCRemoteSwiftPackageReference "bottom-sheet" */;
+			productName = BottomSheet;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5851243128AE3BD300D2C651 /* Project object */;
 }
