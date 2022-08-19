@@ -138,43 +138,4 @@ extension Animal {
 
         return ("", "")
     }
-
-//    static func formattedAnimalObject(animal: Animal) -> Animal {
-//        let heightPreference: Height = UserDefaults.heightPreference
-//        let weightPreference: Weight = UserDefaults.weightPreference
-//        var animal = animal
-//
-//        switch heightPreference {
-//        case .feet:
-//            animal.length_min += " \(heightPreference.unit)"
-//            animal.length_max += " \(heightPreference.unit)"
-//        case .centimetres:
-//            if let minimum = Double(animal.length_min), let maximum = Double(animal.length_max) {
-//                animal.length_min = "\((minimum * Conversions.centimetres.rawValue).truncate(places: 2)) \(heightPreference.unit)"
-//                animal.length_max = "\((maximum * Conversions.centimetres.rawValue).truncate(places: 2)) \(heightPreference.unit)"
-//            }
-//        case .metres:
-//            if let minimum = Double(animal.length_min), let maximum = Double(animal.length_max) {
-//                animal.length_min = "\((minimum * Conversions.metres.rawValue).truncate(places: 2)) \(heightPreference.unit)"
-//                animal.length_max = "\((maximum * Conversions.metres.rawValue).truncate(places: 2)) \(heightPreference.unit)"
-//            }
-//        }
-//
-//        switch weightPreference {
-//        case .pounds:
-//            animal.weight_min += " \(weightPreference.unit)"
-//            animal.weight_max += " \(weightPreference.unit)"
-//        case .kilograms:
-//            if let minimum = Double(animal.weight_min), let maximum = Double(animal.weight_max) {
-//                animal.weight_min = "\((minimum * Conversions.kilograms.rawValue).truncate(places: 2)) \(weightPreference.unit)"
-//                animal.weight_max = "\((maximum * Conversions.kilograms.rawValue).truncate(places: 2)) \(weightPreference.unit)"
-//            }
-//        case .stones:
-//            if let minimum = Double(animal.weight_min), let maximum = Double(animal.weight_max) {
-//                animal.weight_min = "\((minimum * Conversions.kilograms.rawValue).truncate(places: 2)) \(weightPreference.unit)"
-//                animal.weight_max = "\((maximum * Conversions.kilograms.rawValue).truncate(places: 2)) \(weightPreference.unit)"
-//            }
-//        }
-//        return animal
-//    }
 }
