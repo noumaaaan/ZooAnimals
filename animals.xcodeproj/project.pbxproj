@@ -96,7 +96,7 @@
 		5851243028AE3BD300D2C651 = {
 			isa = PBXGroup;
 			children = (
-				5851248028AFD82A00D2C651 /* UserSettings.swift */,
+				5851243C28AE3BD300D2C651 /* animalsApp.swift */,
 				5851243B28AE3BD300D2C651 /* animals */,
 				5851244C28AE3BD500D2C651 /* animalsTests */,
 				5851245628AE3BD500D2C651 /* animalsUITests */,
@@ -117,17 +117,10 @@
 		5851243B28AE3BD300D2C651 /* animals */ = {
 			isa = PBXGroup;
 			children = (
-				5851243C28AE3BD300D2C651 /* animalsApp.swift */,
-				5851246828AE50F300D2C651 /* AnimalViewModel.swift */,
-				5851246A28AE510300D2C651 /* SettingsView.swift */,
-				5851246C28AE511300D2C651 /* AnimalDetailView.swift */,
-				5851247E28AFBB3F00D2C651 /* AnimalDetailViewModel.swift */,
-				5851246E28AE512100D2C651 /* AnimalModel.swift */,
-				5851247028AE512A00D2C651 /* Enums.swift */,
-				5851243E28AE3BD300D2C651 /* AnimalListView.swift */,
-				5851247C28AEF7E100D2C651 /* SharedComponents.swift */,
-				5851247428AE535900D2C651 /* AnimalRequest.swift */,
-				5851246628AE3CAE00D2C651 /* LaunchScreen.storyboard */,
+				5851248528AFD8FF00D2C651 /* Helpers */,
+				5851248428AFD8F700D2C651 /* ViewModels */,
+				5851248328AFD8F000D2C651 /* Models */,
+				5851248228AFD8EC00D2C651 /* Views */,
 				5851244028AE3BD500D2C651 /* Assets.xcassets */,
 				5851244228AE3BD500D2C651 /* Preview Content */,
 			);
@@ -157,6 +150,45 @@
 				5851245928AE3BD500D2C651 /* animalsUITestsLaunchTests.swift */,
 			);
 			path = animalsUITests;
+			sourceTree = "<group>";
+		};
+		5851248228AFD8EC00D2C651 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5851246628AE3CAE00D2C651 /* LaunchScreen.storyboard */,
+				5851246C28AE511300D2C651 /* AnimalDetailView.swift */,
+				5851246A28AE510300D2C651 /* SettingsView.swift */,
+				5851247428AE535900D2C651 /* AnimalRequest.swift */,
+				5851243E28AE3BD300D2C651 /* AnimalListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5851248328AFD8F000D2C651 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5851246E28AE512100D2C651 /* AnimalModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5851248428AFD8F700D2C651 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5851247E28AFBB3F00D2C651 /* AnimalDetailViewModel.swift */,
+				5851246828AE50F300D2C651 /* AnimalViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5851248528AFD8FF00D2C651 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5851248028AFD82A00D2C651 /* UserSettings.swift */,
+				5851247C28AEF7E100D2C651 /* SharedComponents.swift */,
+				5851247028AE512A00D2C651 /* Enums.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

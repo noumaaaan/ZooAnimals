@@ -30,7 +30,7 @@ struct AnimalListView: View {
             } else {
                 ForEach(animalViewModel.animals) { animal in
                     NavigationLink {
-                        AnimalDetailView(viewModel: AnimalDetailViewModel(selectedAnimal: Animal.formattedAnimalObject(animal: animal)))
+                        AnimalDetailView(viewModel: AnimalDetailViewModel(selectedAnimal: animal))
                     } label: {
                         AnimalRowView(animal: animal)
                     }
