@@ -24,6 +24,7 @@
 		5851247B28AED6D100D2C651 /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 5851247A28AED6D100D2C651 /* BottomSheet */; };
 		5851247D28AEF7E100D2C651 /* SharedComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5851247C28AEF7E100D2C651 /* SharedComponents.swift */; };
 		5851247F28AFBB3F00D2C651 /* AnimalDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5851247E28AFBB3F00D2C651 /* AnimalDetailViewModel.swift */; };
+		5851248128AFD82A00D2C651 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5851248028AFD82A00D2C651 /* UserSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		5851247428AE535900D2C651 /* AnimalRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalRequest.swift; sourceTree = "<group>"; };
 		5851247C28AEF7E100D2C651 /* SharedComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedComponents.swift; sourceTree = "<group>"; };
 		5851247E28AFBB3F00D2C651 /* AnimalDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailViewModel.swift; sourceTree = "<group>"; };
+		5851248028AFD82A00D2C651 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		5851243028AE3BD300D2C651 = {
 			isa = PBXGroup;
 			children = (
+				5851248028AFD82A00D2C651 /* UserSettings.swift */,
 				5851243B28AE3BD300D2C651 /* animals */,
 				5851244C28AE3BD500D2C651 /* animalsTests */,
 				5851245628AE3BD500D2C651 /* animalsUITests */,
@@ -303,6 +306,7 @@
 				5851247128AE512A00D2C651 /* Enums.swift in Sources */,
 				5851246928AE50F300D2C651 /* AnimalViewModel.swift in Sources */,
 				5851246D28AE511300D2C651 /* AnimalDetailView.swift in Sources */,
+				5851248128AFD82A00D2C651 /* UserSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

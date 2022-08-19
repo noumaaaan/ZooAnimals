@@ -12,26 +12,12 @@ class AnimalViewModel: ObservableObject {
 
     @Published var animals = [Animal]()
     @Published var errorMessage: String = ""
-    @Published var selectedAnimal: Animal?
-
-    let preference = PassthroughSubject<Bool, Never>()
-//    let weight = PassthroughSubject<Weight, Never>()
 
     var heightPreference: Height = UserDefaults.heightPreference
     var weightPreference: Weight = UserDefaults.weightPreference
 
     func saveUserDefaults(heightValue: Height, weightValue: Weight) {
-        UserDefaults.standard.set(heightValue.rawValue, forKey: "heightPreference")
-//        height.send(heightValue)
-        UserDefaults.standard.set(weightValue.rawValue, forKey: "weightPreference")
-//        weight.send(weightValue)
-
-        if let selAnimal = selectedAnimal {
-            selectedAnimal = Animal.formattedAnimalObject(animal: selAnimal)
-        }
-
-
-        preference.send(true)
+        UserSettings.shared.saveUserDefaults(heightValue: heightValue, weightValue: weightValue)
     }
 
     private var cancellable = Set<AnyCancellable>()
@@ -113,6 +99,46 @@ private enum Conversions: Double {
 
 extension Animal {
 
+    func calculateLength(heightPreference: Height) -> (min: String, max: String) {
+        switch heightPreference {
+        case .feet:
+            return ("\(self.length_min) \(heightPreference.unit)", "\(self.length_max) \(heightPreference.unit)")
+        case .centimetres:
+            if let minimum = Double(self.length_min), let maximum = Double(self.length_max) {
+                return ("\((minimum * Conversions.centimetres.rawValue).truncate(places: 2)) \(heightPreference.unit)",
+                        "\((maximum * Conversions.centimetres.rawValue).truncate(places: 2)) \(heightPreference.unit)")
+            }
+        case .metres:
+            if let minimum = Double(self.length_min), let maximum = Double(self.length_max) {
+                return ("\((minimum * Conversions.metres.rawValue).truncate(places: 2)) \(heightPreference.unit)",
+                        "\((maximum * Conversions.metres.rawValue).truncate(places: 2)) \(heightPreference.unit)")
+            }
+        }
+
+        return ("", "")
+    }
+
+    func calculateWeight(weightPreference: Weight) -> (min: String, max: String) {
+        switch weightPreference {
+        case .pounds:
+            return ("\(self.weight_min) \(weightPreference.unit)",
+             "\(self.weight_max) \(weightPreference.unit)")
+
+        case .kilograms:
+            if let minimum = Double(self.weight_min), let maximum = Double(self.weight_max) {
+                return ("\((minimum * Conversions.kilograms.rawValue).truncate(places: 2)) \(weightPreference.unit)",
+                        "\((maximum * Conversions.kilograms.rawValue).truncate(places: 2)) \(weightPreference.unit)")
+            }
+        case .stones:
+            if let minimum = Double(self.weight_min), let maximum = Double(self.weight_max) {
+                return ("\((minimum * Conversions.kilograms.rawValue).truncate(places: 2)) \(weightPreference.unit)",
+                        "\((maximum * Conversions.kilograms.rawValue).truncate(places: 2)) \(weightPreference.unit)")
+            }
+        }
+
+        return ("", "")
+    }
+
     static func formattedAnimalObject(animal: Animal) -> Animal {
         let heightPreference: Height = UserDefaults.heightPreference
         let weightPreference: Weight = UserDefaults.weightPreference
@@ -151,5 +177,4 @@ extension Animal {
         }
         return animal
     }
-
 }

@@ -20,9 +20,9 @@ private enum Constants {
 }
 
 struct AnimalDetailView: View {
-//    @ObservedObject var animalViewModel: AnimalViewModel
     @ObservedObject var viewModel: AnimalDetailViewModel
-//    let animal: Animal
+    @State var animalWeight: String = "-"
+    @State var animalHeight: String = "-"
 
     var body: some View {
         VStack {
@@ -33,10 +33,14 @@ struct AnimalDetailView: View {
                 }
                 DetailViewRow(heading: Constants.name, value: "\(self.viewModel.animal.name) (\(self.viewModel.animal.latin_name))")
                 DetailViewRow(heading: Constants.diet, value: self.viewModel.animal.diet)
-                DetailViewRow(heading: Constants.height, value: "\(self.viewModel.animal.length_min) - \(self.viewModel.animal.length_max)")
-                DetailViewRow(heading: Constants.weight, value: "\(self.viewModel.animal.weight_min) - \(self.viewModel.animal.weight_max)")
+                DetailViewRow(heading: Constants.height, value: self.animalHeight)
+                DetailViewRow(heading: Constants.weight, value: self.animalWeight)
             }
             .frame(maxHeight: .infinity)
+            .onAppear {
+                self.animalWeight = "\(self.viewModel.animal.calculateWeight(weightPreference: UserSettings.shared.weightPreference).0) - \(self.viewModel.animal.calculateWeight(weightPreference: UserSettings.shared.weightPreference).1)"
+                self.animalHeight = "\(self.viewModel.animal.calculateLength(heightPreference: UserSettings.shared.heightPreference).0) - \(self.viewModel.animal.calculateLength(heightPreference: UserSettings.shared.heightPreference).1)"
+            }
         }
         .navigationTitle(self.viewModel.animal.name)
         .navigationBarTitleDisplayMode(.inline)
